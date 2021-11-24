@@ -1,0 +1,310 @@
+.sectionHomePage {
+  height: 100vh;
+  @media (max-width: 720px) {
+    height: max-content;
+  }
+  min-width: 280px;
+  background: url("../assets/PhotoInicial.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.HeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1.875rem;
+
+  @media (max-width: 720px) {
+    align-items: flex-start;
+  }
+
+  font-weight: 700;
+
+  h1 {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+
+    @media (max-width: 720px) {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-right: 1rem;
+
+    li {
+      list-style: none;
+    }
+
+    @media (max-width: 720px) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+  }
+
+  .DesktopMenu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    @media (max-width: 720px) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      appearance: none;
+      background: transparent;
+      border: none;
+
+      border-radius: 0.5rem;
+
+      background: var(--primary-color);
+      color: white;
+
+      &:first-child {
+        background: transparent;
+        font-weight: 700;
+      }
+
+      span {
+        padding: 1rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+
+        svg {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.HomePageContainer {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+
+  h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+
+    @media (max-width: 720px) {
+      font-size: 2rem;
+      line-height: normal;
+    }
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @media (max-width: 720px) {
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      appearance: none;
+      border: none;
+      background: transparent;
+      color: white;
+      padding: 0.8rem 1.75rem;
+      line-height: 1.375rem;
+      background: var(--primary-color);
+      border-radius: 2rem;
+      font-weight: 700;
+
+      &:last-child {
+        background-color: transparent;
+        border: 1px solid white;
+      }
+    }
+  }
+}
+
+.HomePageCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 1rem;
+
+  @media (max-width: 720px) {
+    display: block;
+    padding-bottom: 2.5rem;
+  }
+
+  div {
+    width: 25vw;
+    height: 200px;
+    background: white;
+    color: var(--text-color);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    box-shadow: 0px 13px 19px 0px #00000012;
+
+    @media (max-width: 720px) {
+      margin: 1.5rem auto 0 auto;
+      width: 350px;
+      max-width: 90%;
+    }
+
+    svg {
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: var(--second-text-color);
+      font-weight: 500;
+    }
+
+    &:last-child {
+      background: var(--primary-color);
+      color: white;
+      p {
+        color: white;
+      }
+    }
+  }
+}
+
+.MenuMobile {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+
+  @media (max-width: 720px) {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      appearance: none;
+      background: transparent;
+      border: none;
+      margin-top: 1rem;
+
+      span {
+        border-top: 2px solid white;
+        width: 20px;
+
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: white;
+          margin-top: 0.31rem;
+        }
+      }
+    }
+  }
+}
+
+.ModalContainer {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background: var(--white);
+  z-index: 100;
+  transform: translateY(0.5rem);
+  transition: 0.3s;
+
+  button {
+    appearance: none;
+    border: none;
+    background: transparent;
+  }
+
+  .ModalBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.25rem;
+    margin-top: 2.5rem;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+  }
+
+  ul {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+
+    li {
+      font-weight: 500;
+      line-height: 2.5rem;
+      list-style: none;
+      font-size: 2rem;
+      color: var(--second-text-color);
+    }
+  }
+}
