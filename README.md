@@ -15,7 +15,7 @@ Site criado para o teste desenvolvimento da Aspec.
 
 <span style="font-family: 'Poppins', sans-serif;font-size:9pt">
 
-Você pode acompanhar o site pelo Link:
+Você pode acompanhar o site pelo Link: https://aspec-ericpandrade.vercel.app/
 
 </span>
 
