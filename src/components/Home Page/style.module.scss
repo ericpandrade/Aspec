@@ -4,10 +4,9 @@
     height: max-content;
   }
   min-width: 280px;
-  background: url("../assets/PhotoInicial.jpeg") no-repeat;
+  background: url("../../assets/HomePage.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
@@ -87,6 +86,14 @@
       background: var(--primary-color);
       color: white;
 
+      transform: scale(0.99);
+
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+
       &:first-child {
         background: transparent;
         font-weight: 700;
@@ -123,6 +130,7 @@
     @media (max-width: 720px) {
       font-size: 2rem;
       line-height: normal;
+      margin-top: 3rem;
     }
   }
 
@@ -155,6 +163,14 @@
       border-radius: 2rem;
       font-weight: 700;
 
+      transform: scale(0.99);
+
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+
       &:last-child {
         background-color: transparent;
         border: 1px solid white;
@@ -173,6 +189,7 @@
   @media (max-width: 720px) {
     display: block;
     padding-bottom: 2.5rem;
+    margin-top: 4rem;
   }
 
   div {
@@ -264,12 +281,12 @@
 
 .ModalContainer {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: fixed;
-  background: var(--white);
-  z-index: 100;
-  transform: translateY(0.5rem);
-  transition: 0.3s;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: 999;
 
   button {
     appearance: none;
